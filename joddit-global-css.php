@@ -34,7 +34,7 @@ function jgcss_frontend_init() {
 		SELECT `stylesheet_name`, `stylesheet_file_path`
 		FROM `$table_name`
 		WHERE `stylesheet_status` = 1";
-	echo $query;
+	
 	// Get the stylesheet data
 	$stylesheets = $wpdb->get_results($query);
 	
